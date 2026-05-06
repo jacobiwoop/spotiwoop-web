@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotiwoop - L'expérience musicale Ultime</title>
+    <meta name="description" content="Téléchargez Spotiwoop, la meilleure application de streaming musical avec recommandations intelligentes et mode hors-ligne.">
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="glow-bg top-left"></div>
+    <div class="glow-bg bottom-right"></div>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i data-lucide="music" class="logo-icon"></i>
+                <span>Spotiwoop</span>
+            </div>
+            <nav>
+                <a href="#features">Fonctionnalités</a>
+                <a href="#download" class="btn-outline">Télécharger</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge">Version 1.0.0 Disponible</div>
+                    <h1 class="hero-title">Écoutez. Découvrez. <span class="gradient-text">Vivez.</span></h1>
+                    <p class="hero-subtitle">Plongez dans un univers musical infini. Profitez de vos morceaux préférés avec des recommandations intelligentes, un mode hors-ligne fluide et des paroles synchronisées interactives.</p>
+                    
+                    <div class="hero-actions">
+                        <!-- Lien vers les releases GitHub (à mettre à jour avec l'URL de l'APK) -->
+                        <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/app-release.apk" class="btn-primary">
+                            <i data-lucide="download"></i>
+                            Télécharger pour Android
+                        </a>
+                        <a href="https://github.com/jacobiwoop/tubidy-test" target="_blank" class="btn-secondary">
+                            <i data-lucide="github"></i>
+                            Voir le code source
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Gratuit & Sans pub</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">HD</span>
+                            <span class="stat-label">Qualité Audio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal delay-1">
+                    <div class="phone-mockup">
+                        <!-- Remplacer le src par une vraie capture de l'app si disponible -->
+                        <div class="screen">
+                            <div class="screen-content">
+                                <div class="player-ui">
+                                    <div class="album-art pulse-animation">
+                                        <i data-lucide="disc" class="placeholder-icon"></i>
+                                    </div>
+                                    <div class="track-info">
+                                        <div class="track-title-mock"></div>
+                                        <div class="track-artist-mock"></div>
+                                    </div>
+                                    <div class="controls-mock">
+                                        <div class="ctrl-btn sm"></div>
+                                        <div class="ctrl-btn lg"></div>
+                                        <div class="ctrl-btn sm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title reveal text-center">Conçu pour <span class="gradient-text">l'excellence</span></h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card glass-card reveal">
+                        <div class="feature-icon">
+                            <i data-lucide="wifi-off"></i>
+                        </div>
+                        <h3>Mode Hors-Ligne Absolu</h3>
+                        <p>Téléchargez vos albums et playlists d'un simple clic. La musique continue même quand votre réseau s'arrête.</p>
+                    </div>
+
+                    <div class="feature-card glass-card reveal delay-1">
+                        <div class="feature-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3>Recommandations Chosic</h3>
+                        <p>Découvrez des pépites basées sur ce que vous écoutez. Des playlists générées intelligemment pour ne jamais tourner en rond.</p>
+                    </div>
+
+                    <div class="feature-card glass-card reveal delay-2">
+                        <div class="feature-icon">
+                            <i data-lucide="mic-2"></i>
+                        </div>
+                        <h3>Paroles Interactives</h3>
+                        <p>Chantez en rythme avec notre vue karaoké. Cliquez sur une ligne de texte pour sauter directement à ce moment précis du morceau.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta" id="download">
+            <div class="container cta-container glass-card reveal">
+                <h2>Prêt à changer de rythme ?</h2>
+                <p>Rejoignez Spotiwoop dès aujourd'hui et redécouvrez votre musique sans limites.</p>
+                <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/app-release.apk" class="btn-primary large">
+                    <i data-lucide="smartphone"></i>
+                    Installer l'APK
+                </a>
+                <p class="small-text">Nécessite Android 8.0 ou supérieur.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <i data-lucide="music" class="logo-icon small"></i>
+                <span>Spotiwoop</span>
+            </div>
+            <p class="copyright">© 2026 Spotiwoop. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="https://github.com/jacobiwoop" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
