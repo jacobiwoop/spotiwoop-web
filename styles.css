@@ -383,26 +383,62 @@ nav a:not(.btn-outline):hover {
     mix-blend-mode: screen;
 }
 
-/* Features */
-.features {
+/* Showcase Gallery */
+.showcase {
     padding: 100px 0;
 }
 
-.section-title {
-    font-size: 3rem;
+.showcase-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+.showcase-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.showcase-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.showcase-text h2 {
+    font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    line-height: 1.2;
     letter-spacing: -1px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.showcase-text p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
-.feature-card {
-    padding: 40px 30px;
+.showcase-visual {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot-img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 30px;
+    border: 6px solid #222;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.showcase-item:hover .screenshot-img {
+    transform: translateY(-10px);
 }
 
 .feature-icon {
@@ -415,17 +451,6 @@ nav a:not(.btn-outline):hover {
     justify-content: center;
     margin-bottom: 24px;
     color: var(--accent-color);
-}
-
-.feature-card h3 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 16px;
-}
-
-.feature-card p {
-    color: var(--text-secondary);
-    font-size: 1.05rem;
 }
 
 /* CTA Section */
@@ -543,8 +568,18 @@ footer {
         justify-content: center;
     }
     
-    .features-grid {
-        grid-template-columns: 1fr;
+    .showcase-item, .showcase-item.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .showcase-text {
+        max-width: 100%;
+    }
+    
+    .feature-icon {
+        margin: 0 auto 24px auto;
     }
 }
 
