@@ -4,177 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotiwoop - L'expérience musicale Ultime</title>
-    <meta name="description" content="Téléchargez Spotiwoop, la meilleure application de streaming musical avec recommandations intelligentes et mode hors-ligne.">
+    <meta name="description" content="Téléchargez Spotiwoop, la meilleure application de streaming musical.">
     
-    <!-- Google Fonts: Outfit -->
+    <!-- Google Fonts: Inter & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     
-    <!-- Icons (Lucide) -->
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="glow-bg top-left"></div>
-    <div class="glow-bg bottom-right"></div>
+    <div class="ambient-light main-light"></div>
 
-    <header>
+    <header id="main-header">
         <div class="container header-container">
             <div class="logo">
                 <i data-lucide="music" class="logo-icon"></i>
                 <span>Spotiwoop</span>
             </div>
-            <nav>
+            <nav class="desktop-nav">
+                <a href="#discover">Découverte</a>
                 <a href="#features">Fonctionnalités</a>
-                <a href="#download" class="btn-outline">Télécharger</a>
+                <a href="#library">Bibliothèque</a>
             </nav>
+            <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-primary small nav-cta">Télécharger</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="container hero-container">
-                <div class="hero-content reveal">
-                    <div class="badge">Version 1.0.0 Disponible</div>
-                    <h1 class="hero-title">Écoutez. Découvrez. <span class="gradient-text">Vivez.</span></h1>
-                    <p class="hero-subtitle">Plongez dans un univers musical infini. Profitez de vos morceaux préférés avec des recommandations intelligentes, un mode hors-ligne fluide et des paroles synchronisées interactives.</p>
-                    
-                    <div class="hero-actions">
-                        <!-- Lien vers les releases GitHub (à mettre à jour avec l'URL de l'APK) -->
-                        <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-primary">
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <div class="pill">V 1.0.0 Disponible</div>
+                    <h1 class="title-mega">La musique,<br><span class="gradient-text">sans limites.</span></h1>
+                    <p class="subtitle">Plongez dans un univers musical infini. Des recommandations intelligentes, un mode hors-ligne absolu, et une interface pensée pour la fluidité.</p>
+                    <div class="hero-cta-group">
+                        <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-primary large">
                             <i data-lucide="download"></i>
-                            Télécharger pour Android
+                            Obtenir l'APK
                         </a>
-                        <a href="https://github.com/jacobiwoop/tubidy-test" target="_blank" class="btn-secondary">
-                            <i data-lucide="github"></i>
-                            Voir le code source
+                        <a href="#discover" class="btn-secondary large">
+                            Découvrir plus
                         </a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Gratuit & Sans pub</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">HD</span>
-                            <span class="stat-label">Qualité Audio</span>
-                        </div>
                     </div>
                 </div>
                 
                 <div class="hero-visual reveal delay-1">
-                    <div class="phone-mockup">
-                        <!-- Remplacer le src par une vraie capture de l'app si disponible -->
-                        <div class="screen" style="background-image: url('Screenshot_2026-05-07-00-11-32-363_com.spotywoop.app-edit.jpg'); background-size: cover; background-position: center; padding: 0;">
-                        </div>
-                        <div class="glow-effect"></div>
+                    <div class="device-frame parallax" data-speed="0.05">
+                        <img src="Screenshot_2026-05-07-00-11-32-363_com.spotywoop.app-edit.jpg" alt="Spotiwoop Home" class="device-screen">
                     </div>
+                    <div class="device-shadow"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Showcase Gallery Section -->
-        <section class="showcase" id="features">
+        <!-- 2. Immersive Section (Bleed out) -->
+        <section class="immersive" id="discover">
+            <div class="container text-center reveal">
+                <h2 class="title-large">Un moteur de découverte <br><span class="highlight">surpuissant.</span></h2>
+                <p class="subtitle centered">Propulsé par l'API Chosic, laissez Spotiwoop créer la radio parfaite basée sur vos goûts actuels. Ne soyez plus jamais à court d'idées.</p>
+            </div>
+            
+            <div class="immersive-visual-wrapper reveal delay-1">
+                <img src="Screenshot_2026-05-07-00-11-51-913_com.spotywoop.app-edit.jpg" alt="Recommandations" class="immersive-img parallax" data-speed="0.1">
+                <div class="fade-overlay"></div>
+            </div>
+        </section>
+
+        <!-- 3. Bento Grid Section -->
+        <section class="bento" id="features">
             <div class="container">
-                
-                <!-- Item 1: Recommandations -->
-                <div class="showcase-item reveal">
-                    <div class="showcase-text">
-                        <div class="feature-icon"><i data-lucide="sparkles"></i></div>
-                        <h2>Recommandations <span class="gradient-text">Intelligentes</span></h2>
-                        <p>Laissez-vous guider par notre moteur propulsé par Chosic. Découvrez de nouveaux artistes et laissez la musique s'enchaîner naturellement en fonction de vos goûts actuels.</p>
-                    </div>
-                    <div class="showcase-visual">
-                        <img src="Screenshot_2026-05-07-00-11-51-913_com.spotywoop.app-edit.jpg" alt="Recommandations Intelligentes" class="screenshot-img">
-                        <div class="glow-effect"></div>
-                    </div>
+                <div class="bento-header reveal">
+                    <h2 class="title-medium">Tout ce qu'il vous faut.<br>Et bien plus.</h2>
+                    <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-outline">Télécharger maintenant <i data-lucide="arrow-right"></i></a>
                 </div>
 
-                <!-- Item 2: Paroles (Reverse) -->
-                <div class="showcase-item reverse reveal">
-                    <div class="showcase-text">
-                        <div class="feature-icon"><i data-lucide="mic-2"></i></div>
-                        <h2>Paroles <span class="gradient-text">Interactives</span></h2>
-                        <p>Ne perdez plus jamais le fil. Affichez les paroles synchronisées en temps réel. Cliquez sur n'importe quelle ligne pour faire avancer la musique instantanément à ce moment précis.</p>
+                <div class="bento-grid">
+                    <!-- Bento Item 1 (Large) -->
+                    <div class="bento-card large glass reveal">
+                        <div class="bento-content">
+                            <h3>Paroles Interactives</h3>
+                            <p>Chantez en rythme avec notre vue karaoké. Cliquez sur une ligne de texte pour sauter instantanément à ce moment précis de la chanson.</p>
+                        </div>
+                        <div class="bento-image-wrapper lyrics-wrapper">
+                            <img src="Screenshot_2026-05-07-00-12-11-418_com.spotywoop.app-edit.jpg" alt="Paroles" class="bento-img">
+                        </div>
                     </div>
-                    <div class="showcase-visual">
-                        <img src="Screenshot_2026-05-07-00-12-11-418_com.spotywoop.app-edit.jpg" alt="Paroles Interactives" class="screenshot-img">
-                        <div class="glow-effect"></div>
+
+                    <!-- Bento Item 2 (Small) -->
+                    <div class="bento-card small glass reveal delay-1">
+                        <div class="bento-content">
+                            <i data-lucide="wifi-off" class="icon-accent"></i>
+                            <h3>Hors-Ligne</h3>
+                            <p>Enregistrez vos albums en un clic. Votre musique vous suit partout.</p>
+                        </div>
+                        <div class="bento-image-wrapper offline-wrapper">
+                            <img src="Screenshot_2026-05-07-00-12-25-141_com.spotywoop.app.jpg" alt="Hors Ligne" class="bento-img">
+                        </div>
+                    </div>
+
+                    <!-- Bento Item 3 (Small) -->
+                    <div class="bento-card small glass reveal delay-2">
+                        <div class="bento-content">
+                            <i data-lucide="play-circle" class="icon-accent"></i>
+                            <h3>Lecteur Premium</h3>
+                            <p>Une interface de lecture fluide, intuitive et incroyablement esthétique.</p>
+                        </div>
+                        <div class="bento-image-wrapper player-wrapper">
+                            <img src="Screenshot_2026-05-07-00-12-36-746_com.spotywoop.app.jpg" alt="Lecteur" class="bento-img">
+                        </div>
                     </div>
                 </div>
-
-                <!-- Item 3: Mode Hors-Ligne -->
-                <div class="showcase-item reveal">
-                    <div class="showcase-text">
-                        <div class="feature-icon"><i data-lucide="wifi-off"></i></div>
-                        <h2>Mode Hors-Ligne <span class="gradient-text">Absolu</span></h2>
-                        <p>Enregistrez vos albums et playlists d'un simple toucher. Sans aucune publicité et sans perte de qualité. Votre musique vous suit partout, même sans réseau.</p>
-                    </div>
-                    <div class="showcase-visual">
-                        <img src="Screenshot_2026-05-07-00-12-25-141_com.spotywoop.app.jpg" alt="Mode Hors Ligne" class="screenshot-img">
-                        <div class="glow-effect"></div>
-                    </div>
-                </div>
-
-                <!-- Item 4: Lecteur Premium (Reverse) -->
-                <div class="showcase-item reverse reveal">
-                    <div class="showcase-text">
-                        <div class="feature-icon"><i data-lucide="play-circle"></i></div>
-                        <h2>Lecteur Audio <span class="gradient-text">Premium</span></h2>
-                        <p>Une interface fluide, esthétique et intuitive. Contrôlez votre musique avec des gestes naturels et profitez de pochettes d'albums en haute résolution.</p>
-                    </div>
-                    <div class="showcase-visual">
-                        <img src="Screenshot_2026-05-07-00-12-36-746_com.spotywoop.app.jpg" alt="Lecteur Premium" class="screenshot-img">
-                        <div class="glow-effect"></div>
-                    </div>
-                </div>
-
-                <!-- Item 5: Bibliothèque -->
-                <div class="showcase-item reveal">
-                    <div class="showcase-text">
-                        <div class="feature-icon"><i data-lucide="library"></i></div>
-                        <h2>Toute votre <span class="gradient-text">Bibliothèque</span></h2>
-                        <p>Gérez vos artistes favoris, organisez vos playlists et accédez à l'historique complet de vos écoutes. Tout est classé, prêt à être joué.</p>
-                    </div>
-                    <div class="showcase-visual">
-                        <img src="Screenshot_2026-05-07-00-12-52-210_com.spotywoop.app.jpg" alt="Bibliothèque" class="screenshot-img">
-                        <div class="glow-effect"></div>
-                    </div>
-                </div>
-
             </div>
         </section>
-        
-        <!-- CTA Section -->
-        <section class="cta" id="download">
-            <div class="container cta-container glass-card reveal">
-                <h2>Prêt à changer de rythme ?</h2>
-                <p>Rejoignez Spotiwoop dès aujourd'hui et redécouvrez votre musique sans limites.</p>
-                <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-primary large">
-                    <i data-lucide="smartphone"></i>
-                    Installer l'APK
-                </a>
-                <p class="small-text">Nécessite Android 8.0 ou supérieur.</p>
+
+        <!-- 4. Focus Split Section -->
+        <section class="focus-split" id="library">
+            <div class="container split-container">
+                <div class="split-text reveal">
+                    <h2 class="title-large">Votre bibliothèque,<br>réinventée.</h2>
+                    <p class="subtitle">Gérez vos artistes favoris, organisez vos playlists et retrouvez votre historique d'écoute en un clin d'œil. Une organisation parfaite pour les mélomanes exigeants.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle-2"></i> Téléchargements rapides</li>
+                        <li><i data-lucide="check-circle-2"></i> Tri intelligent</li>
+                        <li><i data-lucide="check-circle-2"></i> Qualité Audio Supérieure</li>
+                    </ul>
+                </div>
+                
+                <div class="split-visual reveal delay-1">
+                    <div class="device-frame half-hidden parallax" data-speed="0.08">
+                        <img src="Screenshot_2026-05-07-00-12-52-210_com.spotywoop.app.jpg" alt="Bibliothèque" class="device-screen">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="cta-banner glass reveal">
+                    <div class="ambient-light cta-light"></div>
+                    <h2 class="title-medium">Prêt à changer de rythme ?</h2>
+                    <p>Rejoignez Spotiwoop dès aujourd'hui. C'est 100% gratuit.</p>
+                    <a href="https://github.com/jacobiwoop/tubidy-test/releases/latest/download/spotywoop-release-signed.apk" class="btn-primary huge">
+                        Télécharger l'application
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container footer-container">
-            <div class="footer-logo">
+        <div class="container footer-content">
+            <div class="logo">
                 <i data-lucide="music" class="logo-icon small"></i>
                 <span>Spotiwoop</span>
             </div>
-            <p class="copyright">© 2026 Spotiwoop. Tous droits réservés.</p>
-            <div class="footer-links">
-                <a href="https://github.com/jacobiwoop" target="_blank">GitHub</a>
-            </div>
+            <p>© 2026 Spotiwoop. Fabriqué avec passion.</p>
+            <a href="https://github.com/jacobiwoop" target="_blank" class="github-link"><i data-lucide="github"></i> Code Source</a>
         </div>
     </footer>
 
